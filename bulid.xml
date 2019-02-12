@@ -9,13 +9,13 @@
                                                            
          <target name="compile">
                  <mkdir d1r="$(resu1t.javaclasses.dir}"/>
-                <java: srcdir="${src.]ave.dir}" destdir="${resu1t.javaclasses.dir}" debug="true" includeantruntime="False">
+                <javac srcdir="${src.]ave.dir}" destdir="${resu1t.javaclasses.dir}" debug="true" includeantruntime="False">
                 </javac>
         </target>
        <!-- Comment Make jar or executable product -->
        <target name="jar" depends="compile">
-               <jar destfile:"$(result.jar.file}">
-                       <fileset dir:"$(resu1t.javac1asses.dir}">
+               <jar destfile="$(result.jar.file}">
+                       <fileset dir="$(resu1t.javac1asses.dir}">
          </fileset>
              </jar>
        </target>
