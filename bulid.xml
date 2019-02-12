@@ -1,21 +1,23 @@
 <project default="compile">
 
-<property name="src.java.dir" location="./src/main/java/converter"/>
-<property name="src.test.dir" location="./src/main/test"/>
-<property name="result.dir" location="./target"/>
-<property name="result.javaclasses.dir" location="${resu1t.dir}/Classes"/>
-<property name="result.testclasses.dir" location=""${resu1t.dir}/testclasses"/>
-<property name="result.jar.file" location="./myproduct.jar"/>
-<target name="compile">
-< mkdir d1r="$(resu1t.javaclasses.dir}"/>
-<java: srcdir="${src.]ave.dir}“ destdir="${resu1t.javaclasses.dir}" debug="true" includeantruntime="False">
-</javac>
-</target>
-<!-- Comment Make jar or executable product -->
-<target name="jar" depends="compile">
-<jar destfile:"$(result.jar.file}">
-<fileset dir:"$(resu1t.javac1asses.dir}">
-</fileset>
-</jar>
-</target>
+         <property name="src.java.dir" location="./src/main/java/converter"/>
+         <property name="src.test.dir" location="./src/main/test"/>
+         <property name="result.dir" location="./target"/>
+         <property name="result.javaclasses.dir" location="${resu1t.dir}/Classes"/>
+         <property name="result.testclasses.dir" location=""${resu1t.dir}/testclasses"/>
+         <property name="result.jar.file" location="./myproduct.jar"/>
+                                                           
+         <target name="compile">
+                 <mkdir d1r="$(resu1t.javaclasses.dir}"/>
+                <java: srcdir="${src.]ave.dir}" destdir="${resu1t.javaclasses.dir}" debug="true" includeantruntime="False">
+                </javac>
+        </target>
+       <!-- Comment Make jar or executable product -->
+       <target name="jar" depends="compile">
+               <jar destfile:"$(result.jar.file}">
+                       <fileset dir:"$(resu1t.javac1asses.dir}">
+         </fileset>
+             </jar>
+       </target>
+<project>
 
